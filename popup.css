@@ -1,0 +1,130 @@
+
+#overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1001;
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 900px;
+  z-index: 1002;
+  display: none;
+  overflow-y: auto;
+}
+
+#popup-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  
+}
+
+.popup-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.popup-left {
+  flex: 1;
+  text-align: center;
+}
+
+.popup-left img {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+.popup-right {
+  flex: 1;
+  padding-left: 20px;
+  margin: 0px;
+}
+
+.popup-right h2 {
+  font-size: 24px;
+  margin-top: 0;
+  padding: 1rem;
+}
+
+.popup-prezzo {
+  font-size: 30px;
+  color: #0a4f45;
+  margin: 10px 0;
+}
+
+#popup-quantita {
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  border: #0a4f45 2px solid;
+}
+
+.btn-aggiungi-carrello {
+  margin-top: 20px;
+  width: 90%;
+  padding: 15px;
+  background-color: #0a4f45;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-aggiungi-carrello:hover {
+  background-color: #0e6a5c;
+}
+
+.popup-desc-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popup-desc {
+  display: none;
+  margin-top: 10px;
+}
+@media screen and (max-width: 850px) {
+    
+    .btn-aggiungi-carrello {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    }
+    .popup-right h2 {
+    font-size: 14px;
+    
+    }
+
+    .popup-prezzo {
+    font-size: 24px;
+    color: #0a4f45;
+    margin: 10px 0;
+    }
+
+    #popup-quantita {
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border: #0a4f45 2px solid;
+    }
+}

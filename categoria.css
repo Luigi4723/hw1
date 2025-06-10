@@ -1,0 +1,22 @@
+
+.home{
+    color: rgb(21, 64, 67);
+    padding: 1rem;
+
+}
+
+#titolo-categoria {
+    padding-left: 1rem;
+    text-align: left;
+    color: rgb(21, 64, 67);
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Piccoli schermi */
+@media screen and (max-width: 850px) {
+    #titolo-categoria{
+        margin-top: 10px;
+    }
+}
